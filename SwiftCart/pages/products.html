@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCart</title>
+    <link rel="icon" type="image/x-icon" href="../media/logo .png" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <!-- button to toggle sidebar -->
+      <button onclick="toggleSidebar()" class="sidebarBtn">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M21 20H7V4H21V20ZM19 18H9V6H19V18Z"
+            fill="currentColor"
+          />
+          <path d="M3 20H5V4H3V20Z" fill="currentColor" />
+        </svg>
+      </button>
+      <!-- sidebar -->
+      <div class="products-sidebar" id="products-sidebar">
+        <div class="logo">
+          <img src="../media/logo .png" alt="SwiftCart Logo" />
+        </div>
+        <h5>Categories</h5>
+        <a href="#dresses" class="sidebar-item">Dresses</a>
+        <a href="#jewellery" class="sidebar-item">Jewellery</a>
+        <a href="#wigs" class="sidebar-item">Wigs</a>
+        <a href="#shoes" class="sidebar-item">Shoes</a>
+        <!-- <a href="#bags" class="sidebar-item">Bags</a> -->
+      </div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="body">
+      <div class="products">
+        <h5 id="dresses">Dresses</h5>
+        <div class="productCategory">
+          <div class="product" prod_id="DRS12">
+            <img src="../media/dress1.jpg" alt="Dress 1" />
+            <div class="product-info">
+              <h3>Floral Summer Dress</h3>
+              <p class="price">Ksh.1200</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(124)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="DRS11">
+            <img src="../media/dres.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Red Dinner Dress</h3>
+              <p class="price">Ksh.1600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(240)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="DRS9">
+            <img src="../media/drs.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Short Floral Dress</h3>
+              <p class="price">Ksh.1300</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(2k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="DRS8">
+            <img src="../media/dress9.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Floral Off-shoulder</h3>
+              <p class="price">Ksh.1900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(4k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="DRS7">
+            <img src="../media/dres.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Red Dinner Dress</h3>
+              <p class="price">Ksh.1600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="DRS6">
+            <img src="../media/dress10.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>White Dinner Dress</h3>
+              <p class="price">Ksh.1600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(2.4k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="DRS5">
+            <img src="../media/dress2.jpeg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Violet h5</h3>
+              <p class="price">Ksh.1900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(24k)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  end of dresses -->
+      <div class="products">
+        <h5 id="wigs">Wigs and Hair Products</h5>
+        <div class="productCategory">
+          <div class="product" prod_id="WIG12">
+            <img src="../media/bdry1.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Hair Dryer</h3>
+              <p class="price">Ksh.3800</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(109)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="WIG10">
+            <img src="../media/wiggy.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Extension Bundles</h3>
+              <p class="price">Ksh.11300</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(32k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="WIG9">
+            <img src="../media/wig3.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Wavy Frontal</h3>
+              <p class="price">Ksh.30900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(14k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="WIG5">
+            <img src="../media/wig2.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>24-inch Semi-Human</h3>
+              <p class="price">Ksh.21600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="WIG4">
+            <img src="../media/wg2.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Straight Semi-Human</h3>
+              <p class="price">Ksh.15700</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(30.4k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="WIG3">
+            <img src="../media/hairr.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Human Frontal Wig</h3>
+              <p class="price">Ksh.30900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(2.4k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="WIG2">
+            <img src="../media/bdry1.webp" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Blow- dryer</h3>
+              <p class="price">Ksh.2700</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(180)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="WIG1">
+            <img src="../media/bdry2.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Hair Dryer Set</h3>
+              <p class="price">Ksh.6000</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(9.5k)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of wigs -->
+
+      <div class="products">
+        <h5 id="shoes">Shoes</h5>
+        <div class="productCategory">
+          <div class="product" prod_id="SHOE11">
+            <img src="../media/boot.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Purple Boots</h3>
+              <p class="price">Ksh.3800</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="SHOE12">
+            <img src="../media/shoesss.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>White Wedding Heels</h3>
+              <p class="price">Ksh.5900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(3.4k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="SHOE7">
+            <img src="../media/shoe3.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Brown 6-inch Heels</h3>
+              <p class="price">Ksh.3600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(699)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="SHOE8">
+            <img src="../media/shoe1.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Velvet Boots</h3>
+              <p class="price">Ksh.2500</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(9.4k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="SHOE5">
+            <img src="../media/shie2.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>6-inch Black heels</h3>
+              <p class="price">Ksh.3900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(24k)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of shoes -->
+      <div class="products">
+        <h5 id="jewellery">Jewellery</h5>
+        <div class="productCategory">
+          <div class="product" prod_id="JWLR12">
+            <img src="../media/bangle.webp" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Bangle</h3>
+              <p class="price">Ksh.800</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(29)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JWLR11">
+            <img src="../media/chocker.jpg" alt="Dress 1" />
+            <div class="product-info">
+              <h3>Chocker</h3>
+              <p class="price">Ksh.4200</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(924)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JWLR10">
+            <img src="../media/ring2.jpeg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Wedding Rings</h3>
+              <p class="price">Ksh.11600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(240)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JWLR9">
+            <img src="../media/ring123.webp" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Coated Ring Set</h3>
+              <p class="price">Ksh.1300</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(2k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JWLR6">
+            <img src="../media/ncklc.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>3-Piece Set</h3>
+              <p class="price">Ksh.4900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(14k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JWLR5">
+            <img src="../media/jwlry3.webp" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Neck Set</h3>
+              <p class="price">Ksh.6600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(599)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JWLR2">
+            <img src="../media/jwlry.webp" alt="jwlry 2" />
+            <div class="product-info">
+              <h3>Hand Jewellery Set</h3>
+              <p class="price">Ksh.1600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(2.7k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JWLR1">
+            <img src="../media/ring1.jpg" alt="ring2" />
+            <div class="product-info">
+              <h3>Ring Set</h3>
+              <p class="price">Ksh.1900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(4k)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of jewelery -->
+
+      <div class="products">
+        <h5 id="official.wj">Jumpsuits, Official 2&3 Pieces</h5>
+        <div class="productCategory">
+          <div class="product" prod_id="JMST12">
+            <img src="../media/official2piece.jpg" alt="Dress 1" />
+            <div class="product-info">
+              <h3>Burgundy 2 Piece</h3>
+              <p class="price">Ksh.2300</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(124)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST11">
+            <img src="../media/official1.jpg" alt="Dress 2" />
+            <div class="product-info">
+              <h3>Brown Official Wear</h3>
+              <p class="price">Ksh.2300</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(240)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST10">
+            <img src="../media/ofc.jpg" alt="ofc2" />
+            <div class="product-info">
+              <h3>Pink Official Wear</h3>
+              <p class="price">Ksh.2300</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(2k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST9">
+            <img src="../media/2pc.jpg" alt="2piece" />
+            <div class="product-info">
+              <h3>Off-shoulder two-Piece</h3>
+              <p class="price">Ksh.1950</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(4k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST8">
+            <img src="../media/jumpsuit.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Wide-leg Green Jumpsuit</h3>
+              <p class="price">Ksh.1800</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST7">
+            <img src="../media/jumpsuit7.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Brown Jumpsuit</h3>
+              <p class="price">Ksh.1600</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST6">
+            <img src="../media/jumpsuit3.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Wide-leg Floral Jumpsuit</h3>
+              <p class="price">Ksh.1900</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST5">
+            <img src="../media/jsuit.jpg" alt="jumpsuit 2" />
+            <div class="product-info">
+              <h3>Classy Jumpsuit</h3>
+              <p class="price">Ksh.2100</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(2.4k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST4">
+            <img src="../media/jst.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Red jumpsuit</h3>
+              <p class="price">Ksh.1700</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(24k)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST3">
+            <img src="../media/officialn.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Official 3-Piece</h3>
+              <p class="price">Ksh.2800</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST2">
+            <img src="../media/officiel.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Red Bell-Bottomed 2piece</h3>
+              <p class="price">Ksh.1800</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+          <div class="product" prod_id="JMST1">
+            <img src="../media/tpc.jpg" alt="jumpsuit" />
+            <div class="product-info">
+              <h3>Green 2-Piece</h3>
+              <p class="price">Ksh.1800</p>
+              <button class="add-to-cart">Add to Cart</button>
+              <div class="rating">
+                ★★★★☆ <span class="review-count">(299)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of official wear and jumpsuits -->
+    </div>
+    <footer>
+      <p>
+        SwiftCart &copy; 2025. All rights reserved . Intellectual Property of
+        Miss Mwarish
+      </p>
+    </footer>
+  </body>
+</html>
